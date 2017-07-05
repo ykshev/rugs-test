@@ -1,0 +1,48 @@
+.filter-list
+  display: flex
+  flex-wrap: wrap
+  &__item
+    margin-right: 25px
+    border: solid 1px #eaeaea
+    padding: 0 14px
+    display: flex
+    align-items: center
+    margin-bottom: 15px
+    &-text
+      margin-right: 14px
+      font: 400 12px/34px 'Open Sans', sans-serif
+      letter-spacing: 0.6px
+      color: #999
+      text-transform: uppercase
+    &-close
+      position: relative
+      width: 11px
+      height: 11px
+      cursor: pointer
+      &:hover
+        &:after,
+        &:before
+          background-color: #eb8a1c
+      &:after,
+      &:before
+        content: ''
+        display: block
+        position: absolute
+        width: 1px
+        height: 10px
+        background-color: #999
+        left: 5px
+        transition: all .2s
+      &:before
+        transform: rotate(-45deg)
+      &:after
+        transform: rotate(45deg)
+  &__clear
+    font: 400 12px/36px 'Open Sans', sans-serif
+    letter-spacing: 0.6px
+    color: #999
+    text-transform: uppercase
+    transition: all .2s
+    cursor: pointer
+    &:hover
+      color: #eb8a1c

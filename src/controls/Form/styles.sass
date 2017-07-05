@@ -1,0 +1,29 @@
+.form
+  &__item
+    margin-bottom: 15px
+    &._double
+      .form__field
+        display: inline-block
+        padding-right: 15px
+        max-width: 50%
+        &:last-child
+          padding-right: 0
+          padding-left: 15px
+          &:after
+            width: 16px
+            height: 2px
+            display: block
+            content: ''
+            background-color: #211d1a
+            position: absolute
+            top: 50%
+            margin-top: -1px
+            right: 100%
+            margin-right: -7px
+    &:last-child
+      margin-bottom: 0
+  &__label
+    font: 400 13px 'Open Sans', sans-serif
+    color: #211d1a
+    margin-bottom: 6px
+    display: block
